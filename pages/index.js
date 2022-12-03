@@ -1,17 +1,15 @@
 import { Navbar, Text } from "@nextui-org/react";
 import { Fragment } from "react";
+import { useSession} from 'next-auth/react';
+import {Button} from "@nextui-org/react";
+import { useRouter } from "next/router";
+
 
 export default function Home() {
+  const router = useRouter()
   return (
-    <Fragment>
-      <Navbar isBordered variant="floating">
-        <Navbar.Brand>
-          <Text>KGK Samaj Voting</Text>
-        </Navbar.Brand>
-        <Navbar.Content hideIn="xs">
-          <Navbar.Link href="/admin">Admin</Navbar.Link>
-        </Navbar.Content>
-      </Navbar>
-    </Fragment>
+  <div><Button onPress={(e) => router.push('/admin') }>Go To Admin Page</Button></div>
   );
 }
+
+
