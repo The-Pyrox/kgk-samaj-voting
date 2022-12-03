@@ -9,10 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.10",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "mongodb": "^4.12.1",
     "next": "13.0.6",
+    "next-auth": "^4.17.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^11.16.1"
   }
 }
